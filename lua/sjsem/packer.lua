@@ -10,7 +10,6 @@ return require('packer').startup(function(use)
     -- Fuzzy finder
     use {
         'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        -- or                            , branch = '0.1.x',
         requires = { { 'nvim-lua/plenary.nvim' } }
     }
 
@@ -25,6 +24,7 @@ return require('packer').startup(function(use)
     use('gbprod/nord.nvim')
     use('folke/tokyonight.nvim')
     use('marko-cerovac/material.nvim')
+    use('navarasu/onedark.nvim')
 
     -- Treesitter
     use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
@@ -38,6 +38,7 @@ return require('packer').startup(function(use)
 
     -- Git
     use('tpope/vim-fugitive')
+    use('lewis6991/gitsigns.nvim')
 
     -- LSP
     use {
@@ -70,4 +71,9 @@ return require('packer').startup(function(use)
 
     -- Floating Terminal
     use('numToStr/FTerm.nvim')
+
+    -- Status Line
+    use('nvim-lualine/lualine.nvim')
+
+    use('numToStr/Comment.nvim')
 end)
