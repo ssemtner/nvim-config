@@ -76,4 +76,7 @@ return require('packer').startup(function(use)
     use('nvim-lualine/lualine.nvim')
 
     use('numToStr/Comment.nvim')
+
+    use('tpope/vim-surround')
+    use('vim-scripts/ReplaceWithRegister')
 end)

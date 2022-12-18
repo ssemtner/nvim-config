@@ -1,4 +1,4 @@
 require("sjsem.packer")
-require("sjsem.set")
-require("sjsem.remap")
+require("sjsem.options")
+require("sjsem.keymap")
 require("sjsem.utils")
