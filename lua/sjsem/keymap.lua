@@ -1,15 +1,15 @@
 local keymap = vim.keymap
 
 local function nmap(lhs, rhs, opts)
-  keymap.set("n", lhs, rhs, opts)
+    keymap.set("n", lhs, rhs, opts)
 end
 
 local function imap(lhs, rhs, opts)
-  keymap.set("i", lhs, rhs, opts)
+    keymap.set("i", lhs, rhs, opts)
 end
 
 local function vmap(lhs, rhs, opts)
-  keymap.set("v", lhs, rhs, opts)
+    keymap.set("v", lhs, rhs, opts)
 end
 
 nmap("<leader>pv", vim.cmd.Ex)
@@ -37,7 +37,7 @@ vmap("d", "\"_d")
 
 nmap("Q", "<nop>")
 nmap("<leader>f", function()
-    lsp.buf.format()
+    vim.lsp.buf.format()
 end)
 
 nmap("<C-k>", "<cmd>cnext<CR>zz")
